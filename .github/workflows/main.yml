@@ -1,18 +1,11 @@
-
 on:
   push:
     branches:
-      - master        
-
-
-
+      - master
 
 jobs:
   build:
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-latest
     steps:
-      - name: 'Testing Githup action' 
-        run: pwd
-
-      - name: 'Testing Printing' 
-        run: echo Eman
+      - name: "Printing folder contents"
+        run: ls
